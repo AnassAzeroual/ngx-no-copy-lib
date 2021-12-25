@@ -1,0 +1,30 @@
+{
+  "name": "ngx-no-copy",
+  "version": "0.0.1-beta",
+  "author": "Anass Azeroual <azeroual.anass2015@gmail.com> (https://github.com/AnassAzeroual)",
+  "license": "MIT",
+  "keywords": [
+    "copy",
+    "paste",
+    "cut",
+    "block",
+    "no-copy",
+    "no-paste",
+    "no-cut",
+    "angular",
+    "ng",
+    "ngx",
+    "ngx-no-copy"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AnassAzeroual/ng-cryptostore-lib"
+  },
+  "peerDependencies": {
+    "@angular/common": "^12.2.0",
+    "@angular/core": "^12.2.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}
