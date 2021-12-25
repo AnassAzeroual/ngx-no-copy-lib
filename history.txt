@@ -1,0 +1,5 @@
+ng new ngx-no-copy --createApplication=false
+ng g library ngx-no-copy
+ng g application demo
+npm login
+rm -rf ./dist/* && ng build ngx-no-copy --configuration production && cd dist/ngx-no-copy && npm publish
