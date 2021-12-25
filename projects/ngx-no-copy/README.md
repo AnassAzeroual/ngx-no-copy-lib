@@ -2,23 +2,44 @@
 
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
 
-## Code scaffolding
+## Table of Contents
 
-Run `ng generate component component-name --project ngx-no-copy` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-no-copy`.
-> Note: Don't forget to add `--project ngx-no-copy` or else it will be added to the default project in your `angular.json` file. 
+- [About](#About)
+- [Imports](#Imports)
+- [Usage](#Usage)
 
-## Build
+## About
+> This package is used to prevent *copy*, *paste* and *cut* in the **Input**'s or the **HTML**
+## Imports 
 
-Run `ng build ngx-no-copy` to build the project. The build artifacts will be stored in the `dist/` directory.
+> Import NgxNoCopyModule in your Module
+```js
 
-## Publishing
+@NgModule({
+  declarations: [
+    AppComponent,
+  ],
+  imports: [
+    ...
+    NgxNoCopyModule // <--- here
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
 
-After building your library with `ng build ngx-no-copy`, go to the dist folder `cd dist/ngx-no-copy` and run `npm publish`.
 
-## Running unit tests
+```
 
-Run `ng test ngx-no-copy` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Usage
 
-## Further help
+> Add NoCopyPasteCutDirective to input 
+```html
+<input type="text" NoCopyPasteCutDirective>
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+> Add NoCopyPasteCutDirective to div 
+```html
+<div NoCopyPasteCutDirective >you will not be able to copy this text 😋</div>
+```
+
